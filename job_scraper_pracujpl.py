@@ -47,7 +47,7 @@ def scrape_page(url):
         })
     return jobs
 
-def scrape_pages(base_url, start_page=1, max_pages=10):
+def scrape_pages(base_url, start_page=1, max_pages=20):
     all_jobs = []
     for page_num in range(start_page, max_pages + 1):
         print(f"Scraping page {page_num}...")
@@ -55,7 +55,6 @@ def scrape_pages(base_url, start_page=1, max_pages=10):
         jobs = scrape_page(url)
         all_jobs.extend(jobs)
 
-        # To avoid getting blocked by the site, include a delay
         time.sleep(1)
 
     return all_jobs
