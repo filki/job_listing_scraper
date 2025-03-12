@@ -1,0 +1,143 @@
+2025-03-12 22:20:17,975 - INFO - Starting async bulk job scraper for pracuj.pl
+2025-03-12 22:20:17,976 - INFO - Resuming from page 1, already collected 0 jobs
+2025-03-12 22:20:19,117 - ERROR - Could not determine total pages from data: 'pagination'
+2025-03-12 22:20:19,117 - WARNING - Could not determine total pages, assuming 3400 pages (68000/20)
+2025-03-12 22:20:19,117 - INFO - Processing 1050 pages in 21 batches of 50 pages each
+2025-03-12 22:20:19,117 - INFO - Processing batch 1/21: pages 1 to 50
+2025-03-12 22:20:34,272 - INFO - Starting async bulk job scraper for pracuj.pl
+2025-03-12 22:20:34,272 - INFO - Resuming from page 1, already collected 0 jobs
+2025-03-12 22:20:35,363 - ERROR - Could not determine total pages from data: 'pagination'
+2025-03-12 22:20:35,363 - WARNING - Could not determine total pages, assuming 3400 pages (68000/20)
+2025-03-12 22:20:35,364 - INFO - Processing 3400 pages in 68 batches of 50 pages each
+2025-03-12 22:20:35,364 - INFO - Processing batch 1/68: pages 1 to 50
+2025-03-12 22:21:16,996 - INFO - Starting async bulk job scraper for pracuj.pl
+2025-03-12 22:21:16,997 - INFO - Resuming from page 1, already collected 0 jobs
+2025-03-12 22:21:18,058 - ERROR - Could not determine total pages from data: 'pagination'
+2025-03-12 22:21:18,058 - WARNING - Could not determine total pages, assuming 3400 pages (68000/20)
+2025-03-12 22:21:18,058 - INFO - Processing 3400 pages in 68 batches of 50 pages each
+2025-03-12 22:21:18,058 - INFO - Processing batch 1/68: pages 1 to 50
+[2025-03-12 22:22:14] Starting bulk job scraper for pracuj.pl
+[2025-03-12 22:22:14] Resuming from page 1, already collected 0 jobs
+[2025-03-12 22:22:14] Scraping page 1: https://www.pracuj.pl/praca?pn=1
+[2025-03-12 22:22:14] Could not determine total pages from data
+[2025-03-12 22:22:14] Could not determine total pages, assuming 3400 pages (68000/20)
+[2025-03-12 22:22:16] Scraping page 1: https://www.pracuj.pl/praca?pn=1
+[2025-03-12 22:22:17] Page 1/1100: Found 50 jobs, total collected: 50
+[2025-03-12 22:22:19] Scraping page 2: https://www.pracuj.pl/praca?pn=2
+[2025-03-12 22:22:20] Page 2/1100: Found 50 jobs, total collected: 100
+[2025-03-12 22:22:22] Scraping page 3: https://www.pracuj.pl/praca?pn=3
+[2025-03-12 22:22:23] Page 3/1100: Found 50 jobs, total collected: 150
+[2025-03-12 22:22:25] Scraping page 4: https://www.pracuj.pl/praca?pn=4
+[2025-03-12 22:22:26] Page 4/1100: Found 50 jobs, total collected: 200
+[2025-03-12 22:22:28] Scraping page 5: https://www.pracuj.pl/praca?pn=5
+[2025-03-12 22:22:29] Page 5/1100: Found 50 jobs, total collected: 250
+[2025-03-12 22:22:31] Scraping page 6: https://www.pracuj.pl/praca?pn=6
+[2025-03-12 22:22:32] Page 6/1100: Found 50 jobs, total collected: 300
+[2025-03-12 22:22:35] Scraping page 7: https://www.pracuj.pl/praca?pn=7
+[2025-03-12 22:22:36] Page 7/1100: Found 50 jobs, total collected: 350
+[2025-03-12 22:22:38] Scraping page 8: https://www.pracuj.pl/praca?pn=8
+[2025-03-12 22:22:39] Page 8/1100: Found 50 jobs, total collected: 400
+[2025-03-12 22:22:39] Scraping interrupted by user
+[2025-03-12 22:22:39] Saved 400 job listings to job_data/batches/jobs_batch_1.json
+[2025-03-12 22:22:39] Consolidated 399 unique job listings into all_jobs_consolidated.json
+[2025-03-12 22:22:39] Scraping completed. Total unique job listings collected: 399
+[2025-03-12 22:22:51] Starting bulk job scraper for pracuj.pl
+[2025-03-12 22:22:51] Resuming from page 9, already collected 400 jobs
+[2025-03-12 22:22:53] Scraping page 9: https://www.pracuj.pl/praca?pn=9
+[2025-03-12 22:22:54] Page 9/1100: Found 50 jobs, total collected: 450
+[2025-03-12 22:22:56] Scraping page 10: https://www.pracuj.pl/praca?pn=10
+[2025-03-12 22:22:57] Page 10/1100: Found 50 jobs, total collected: 500
+[2025-03-12 22:22:58] Scraping page 11: https://www.pracuj.pl/praca?pn=11
+[2025-03-12 22:22:59] Page 11/1100: Found 50 jobs, total collected: 550
+[2025-03-12 22:23:01] Scraping page 12: https://www.pracuj.pl/praca?pn=12
+[2025-03-12 22:23:02] Page 12/1100: Found 50 jobs, total collected: 600
+[2025-03-12 22:23:03] Scraping page 13: https://www.pracuj.pl/praca?pn=13
+[2025-03-12 22:23:04] Page 13/1100: Found 50 jobs, total collected: 650
+[2025-03-12 22:23:07] Scraping page 14: https://www.pracuj.pl/praca?pn=14
+[2025-03-12 22:23:08] Page 14/1100: Found 50 jobs, total collected: 700
+[2025-03-12 22:23:10] Scraping page 15: https://www.pracuj.pl/praca?pn=15
+[2025-03-12 22:23:11] Page 15/1100: Found 50 jobs, total collected: 750
+[2025-03-12 22:23:13] Scraping page 16: https://www.pracuj.pl/praca?pn=16
+[2025-03-12 22:23:14] Page 16/1100: Found 50 jobs, total collected: 800
+[2025-03-12 22:23:15] Scraping page 17: https://www.pracuj.pl/praca?pn=17
+[2025-03-12 22:23:16] Page 17/1100: Found 50 jobs, total collected: 850
+[2025-03-12 22:23:17] Scraping page 18: https://www.pracuj.pl/praca?pn=18
+[2025-03-12 22:23:19] Page 18/1100: Found 50 jobs, total collected: 900
+[2025-03-12 22:23:20] Scraping page 19: https://www.pracuj.pl/praca?pn=19
+[2025-03-12 22:23:21] Page 19/1100: Found 50 jobs, total collected: 950
+[2025-03-12 22:23:23] Scraping page 20: https://www.pracuj.pl/praca?pn=20
+[2025-03-12 22:23:24] Page 20/1100: Found 50 jobs, total collected: 1000
+[2025-03-12 22:23:26] Scraping page 21: https://www.pracuj.pl/praca?pn=21
+[2025-03-12 22:23:28] Page 21/1100: Found 50 jobs, total collected: 1050
+[2025-03-12 22:23:29] Scraping page 22: https://www.pracuj.pl/praca?pn=22
+[2025-03-12 22:23:30] Page 22/1100: Found 50 jobs, total collected: 1100
+[2025-03-12 22:23:33] Scraping page 23: https://www.pracuj.pl/praca?pn=23
+[2025-03-12 22:23:34] Page 23/1100: Found 50 jobs, total collected: 1150
+[2025-03-12 22:23:36] Scraping page 24: https://www.pracuj.pl/praca?pn=24
+[2025-03-12 22:23:37] Page 24/1100: Found 50 jobs, total collected: 1200
+[2025-03-12 22:23:39] Scraping page 25: https://www.pracuj.pl/praca?pn=25
+[2025-03-12 22:23:40] Page 25/1100: Found 50 jobs, total collected: 1250
+[2025-03-12 22:23:42] Scraping page 26: https://www.pracuj.pl/praca?pn=26
+[2025-03-12 22:23:43] Page 26/1100: Found 50 jobs, total collected: 1300
+[2025-03-12 22:23:45] Scraping page 27: https://www.pracuj.pl/praca?pn=27
+[2025-03-12 22:23:46] Page 27/1100: Found 50 jobs, total collected: 1350
+[2025-03-12 22:23:47] Scraping page 28: https://www.pracuj.pl/praca?pn=28
+[2025-03-12 22:23:48] Page 28/1100: Found 50 jobs, total collected: 1400
+[2025-03-12 22:23:50] Scraping page 29: https://www.pracuj.pl/praca?pn=29
+[2025-03-12 22:23:51] Page 29/1100: Found 50 jobs, total collected: 1450
+[2025-03-12 22:23:53] Scraping page 30: https://www.pracuj.pl/praca?pn=30
+[2025-03-12 22:23:54] Page 30/1100: Found 50 jobs, total collected: 1500
+[2025-03-12 22:23:57] Scraping page 31: https://www.pracuj.pl/praca?pn=31
+[2025-03-12 22:23:58] Page 31/1100: Found 50 jobs, total collected: 1550
+[2025-03-12 22:23:59] Scraping page 32: https://www.pracuj.pl/praca?pn=32
+[2025-03-12 22:24:00] Page 32/1100: Found 50 jobs, total collected: 1600
+[2025-03-12 22:24:01] Scraping page 33: https://www.pracuj.pl/praca?pn=33
+[2025-03-12 22:24:03] Page 33/1100: Found 50 jobs, total collected: 1650
+[2025-03-12 22:24:04] Scraping page 34: https://www.pracuj.pl/praca?pn=34
+[2025-03-12 22:24:06] Page 34/1100: Found 50 jobs, total collected: 1700
+[2025-03-12 22:24:07] Scraping page 35: https://www.pracuj.pl/praca?pn=35
+[2025-03-12 22:24:08] Page 35/1100: Found 50 jobs, total collected: 1750
+[2025-03-12 22:24:09] Scraping page 36: https://www.pracuj.pl/praca?pn=36
+[2025-03-12 22:24:10] Page 36/1100: Found 50 jobs, total collected: 1800
+[2025-03-12 22:24:12] Scraping page 37: https://www.pracuj.pl/praca?pn=37
+[2025-03-12 22:24:13] Page 37/1100: Found 50 jobs, total collected: 1850
+[2025-03-12 22:24:15] Scraping page 38: https://www.pracuj.pl/praca?pn=38
+[2025-03-12 22:24:16] Page 38/1100: Found 50 jobs, total collected: 1900
+[2025-03-12 22:24:18] Scraping page 39: https://www.pracuj.pl/praca?pn=39
+[2025-03-12 22:24:19] Page 39/1100: Found 50 jobs, total collected: 1950
+[2025-03-12 22:24:22] Scraping page 40: https://www.pracuj.pl/praca?pn=40
+[2025-03-12 22:24:23] Scraping interrupted by user
+[2025-03-12 22:24:23] Saved 1550 job listings to job_data/batches/jobs_batch_1.json
+[2025-03-12 22:24:24] Consolidated 1550 unique job listings into all_jobs_consolidated.json
+[2025-03-12 22:24:24] Scraping completed. Total unique job listings collected: 1550
+[2025-03-12 22:30:05] Starting bulk job scraper for pracuj.pl
+[2025-03-12 22:30:05] Resuming from page 40, already collected 1950 jobs
+[2025-03-12 22:30:06] Scraping page 40: https://www.pracuj.pl/praca?pn=40
+[2025-03-12 22:30:07] Page 40/1100: Found 50 jobs, total collected: 2000
+[2025-03-12 22:30:10] Scraping page 41: https://www.pracuj.pl/praca?pn=41
+[2025-03-12 22:30:11] Page 41/1100: Found 50 jobs, total collected: 2050
+[2025-03-12 22:30:13] Scraping page 42: https://www.pracuj.pl/praca?pn=42
+[2025-03-12 22:30:14] Page 42/1100: Found 50 jobs, total collected: 2100
+[2025-03-12 22:30:17] Scraping page 43: https://www.pracuj.pl/praca?pn=43
+[2025-03-12 22:30:18] Page 43/1100: Found 50 jobs, total collected: 2150
+[2025-03-12 22:30:20] Scraping page 44: https://www.pracuj.pl/praca?pn=44
+[2025-03-12 22:30:22] Page 44/1100: Found 50 jobs, total collected: 2200
+[2025-03-12 22:30:25] Scraping page 45: https://www.pracuj.pl/praca?pn=45
+[2025-03-12 22:30:27] Page 45/1100: Found 50 jobs, total collected: 2250
+[2025-03-12 22:30:28] Scraping page 46: https://www.pracuj.pl/praca?pn=46
+[2025-03-12 22:30:30] Page 46/1100: Found 50 jobs, total collected: 2300
+[2025-03-12 22:30:33] Scraping page 47: https://www.pracuj.pl/praca?pn=47
+[2025-03-12 22:30:34] Page 47/1100: Found 50 jobs, total collected: 2350
+[2025-03-12 22:30:36] Scraping page 48: https://www.pracuj.pl/praca?pn=48
+[2025-03-12 22:30:38] Page 48/1100: Found 50 jobs, total collected: 2400
+[2025-03-12 22:30:39] Scraping page 49: https://www.pracuj.pl/praca?pn=49
+[2025-03-12 22:30:40] Page 49/1100: Found 50 jobs, total collected: 2450
+[2025-03-12 22:30:42] Scraping page 50: https://www.pracuj.pl/praca?pn=50
+[2025-03-12 22:30:44] Page 50/1100: Found 50 jobs, total collected: 2500
+[2025-03-12 22:30:46] Scraping page 51: https://www.pracuj.pl/praca?pn=51
+[2025-03-12 22:30:48] Page 51/1100: Found 50 jobs, total collected: 2550
+[2025-03-12 22:30:50] Scraping page 52: https://www.pracuj.pl/praca?pn=52
+[2025-03-12 22:30:51] Scraping interrupted by user
+[2025-03-12 22:30:51] Saved 600 job listings to job_data/batches/jobs_batch_1.json
+[2025-03-12 22:30:51] Consolidated 600 unique job listings into all_jobs_consolidated.json
+[2025-03-12 22:30:51] Scraping completed. Total unique job listings collected: 600
