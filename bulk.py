@@ -11,11 +11,15 @@ import aiohttp
 from datetime import datetime
 
 # Constants
-BASE_URL = "https://www.pracuj.pl/praca"
-RESULTS_PER_PAGE = 20  # Most job sites show 20 results per page
+BASE_URL = "https://it.pracuj.pl/praca"
+RESULTS_PER_PAGE = 50  # Most job sites show 20 results per page
 DATA_DIR = "job_data"
 PROGRESS_FILE = "scraping_progress.json"
 LOG_FILE = "scraper_log.txt"
+
+# Environment variable flags (0=disabled, 1=enabled)
+SAVE_RAW_PAGES = os.environ.get('SAVE_RAW_PAGES', '0') == '1'
+SAVE_RAW_JOBS = os.environ.get('SAVE_RAW_JOBS', '0') == '1'
 
 # Browser-like headers to avoid being detected as a bot
 HEADERS = {
@@ -35,6 +39,26 @@ def log_message(message):
         f.write(log_entry)
     
     print(message)
+
+def log_timing(operation, start_time, end_time=None):
+    """Log the time taken for an operation"""
+    if end_time is None:
+        end_time = time.time()
+    
+    duration = end_time - start_time
+    
+    # Format duration based on length
+    if duration < 1:
+        formatted_duration = f"{duration * 1000:.2f} ms"
+    elif duration < 60:
+        formatted_duration = f"{duration:.2f} seconds"
+    elif duration < 3600:
+        formatted_duration = f"{duration / 60:.2f} minutes"
+    else:
+        formatted_duration = f"{duration / 3600:.2f} hours"
+    
+    log_message(f"TIMING: {operation} took {formatted_duration}")
+    return duration
 
 def save_progress(current_page, total_pages, jobs_collected):
     """Save current progress to resume later if needed"""
@@ -421,11 +445,12 @@ async def fetch_job_details_async(job_listings, max_concurrent=12):
                         
                         html = await response.text()
                         
-                        # Save raw job HTML for debugging
-                        job_dir = os.path.join(DATA_DIR, "raw_jobs")
-                        os.makedirs(job_dir, exist_ok=True)
-                        with open(os.path.join(job_dir, f"job_{job['id']}.html"), 'w', encoding='utf-8') as f:
-                            f.write(html)
+                        # Save raw job HTML for debugging only if enabled
+                        if SAVE_RAW_JOBS:
+                            job_dir = os.path.join(DATA_DIR, "raw_jobs")
+                            os.makedirs(job_dir, exist_ok=True)
+                            with open(os.path.join(job_dir, f"job_{job['id']}.html"), 'w', encoding='utf-8') as f:
+                                f.write(html)
                         
                         # Extract job details from HTML
                         extract_job_details(html, job)
@@ -490,11 +515,12 @@ def fetch_job_details_sync(job_listings):
             
             html = response.text
             
-            # Save raw job HTML for debugging
-            job_dir = os.path.join(DATA_DIR, "raw_jobs")
-            os.makedirs(job_dir, exist_ok=True)
-            with open(os.path.join(job_dir, f"job_{job['id']}.html"), 'w', encoding='utf-8') as f:
-                f.write(html)
+            # Save raw job HTML for debugging only if enabled
+            if SAVE_RAW_JOBS:
+                job_dir = os.path.join(DATA_DIR, "raw_jobs")
+                os.makedirs(job_dir, exist_ok=True)
+                with open(os.path.join(job_dir, f"job_{job['id']}.html"), 'w', encoding='utf-8') as f:
+                    f.write(html)
             
             # Extract job details from HTML
             extract_job_details(html, job)
@@ -550,11 +576,12 @@ def scrape_page(page_number):
             log_message(f"Failed to fetch page {page_number}: HTTP {response.status_code}")
             return []
         
-        # Save the raw HTML for debugging
-        raw_dir = os.path.join(DATA_DIR, "raw_pages")
-        os.makedirs(raw_dir, exist_ok=True)
-        with open(os.path.join(raw_dir, f"page_{page_number}.html"), 'w', encoding='utf-8') as f:
-            f.write(response.text)
+        # Save the raw HTML for debugging only if enabled
+        if SAVE_RAW_PAGES:
+            raw_dir = os.path.join(DATA_DIR, "raw_pages")
+            os.makedirs(raw_dir, exist_ok=True)
+            with open(os.path.join(raw_dir, f"page_{page_number}.html"), 'w', encoding='utf-8') as f:
+                f.write(response.text)
         
         # Extract job data
         extraction_start = time.time()
