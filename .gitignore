@@ -50,3 +50,7 @@ scraping_progress.json
 # OS specific
 .DS_Store
 Thumbs.db
+
+# HTML
+*.html
+
