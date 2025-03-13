@@ -198,7 +198,8 @@ def consolidate_data():
     # Deduplicate by job ID
     unique_jobs = {}
     for job in all_jobs:
-        unique_jobs[job["id"]] = job
+        key = f"{job['title']}_{job['company']}_{job['location']}"
+        unique_jobs[key] = job
     
     all_unique_jobs = list(unique_jobs.values())
     
